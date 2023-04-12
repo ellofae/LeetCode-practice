@@ -16,12 +16,12 @@ func sortedSquares(nums []int) []int {
 	return nums
 }
 
-// Bubble sort
-// Algorithm's average and worst time complexity: O(n^2)
-// Algorithm's best time complexity: O(n)
+// Merge sort
+// Algorithm's average and worst time complexity: O(n*log(n))
+// Algorithm's best time complexity: O(n*log(n))
 func mergeSort(nums []int, low int, high int) {
 	if low < high {
-		mid := (high + low) / 2 // low + (high-low)/2 //
+		mid := (high + low) / 2
 
 		mergeSort(nums, low, mid)
 		mergeSort(nums, mid+1, high)
